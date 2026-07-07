@@ -1,0 +1,123 @@
+commit c9e4c97fa4371533cd3aadf75d838faae0012f41
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Wed Aug 10 15:29:11 2022 +0200
+
+    Tags should start with a 'v'.
+
+commit b866804f592f17e22265037c07039d79ae0d0263
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Wed Aug 10 15:25:35 2022 +0200
+
+    [Gradle Release Plugin] - new version commit:  '1.0.1-SNAPSHOT'.
+
+commit dacefab7c527814d9c606d0f8430d1ed34df1844
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Wed Aug 10 15:25:27 2022 +0200
+
+     [Gradle Release Plugin] - pre tag commit:  '1.0.0'.
+
+commit c404619e3dfed8b676f0b65307240e74594bcb36
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Wed Aug 10 15:24:58 2022 +0200
+
+    Prepare for release.
+
+commit 2be8d01ac446008dea6dcd8dc42f583582fb80f0
+Merge: f979c2a c3d126a
+Author: VolkerHartmann <volker.hartmann@kit.edu>
+Date:   Wed Aug 10 15:04:49 2022 +0200
+
+    Merge pull request #2 from VolkerHartmann/development
+    
+    Prepare for version 1.0.0
+
+commit c3d126a29ea47c1df26e5adb356ebe5afed8ea3e
+Merge: cfecb2a f979c2a
+Author: VolkerHartmann <volker.hartmann@kit.edu>
+Date:   Wed Aug 10 15:01:21 2022 +0200
+
+    Merge branch 'kit-data-manager:main' into development
+
+commit cfecb2ab837f802264e65840b09ef7e8a74974d8
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Wed Aug 10 09:59:39 2022 +0200
+
+    Prepare changelog for next release.
+
+commit 66405523971b07b96e1098f0f6fee0bc046f74ef
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Wed Aug 10 09:58:49 2022 +0200
+
+    Monitoring information will now be send via PUT.
+
+commit f979c2aaca0ba1510eec260af6970171c09bc91a
+Merge: 3985290 9fd3f14
+Author: VolkerHartmann <volker.hartmann@kit.edu>
+Date:   Wed Mar 16 08:56:02 2022 +0100
+
+    Merge pull request #1 from VolkerHartmann/main
+    
+    Prepare first release.
+
+commit 9fd3f14d14b14bc8e090b905656332097a38d241
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Wed Mar 16 08:03:08 2022 +0100
+
+    Fix typo in json schema.
+    Switch to jackson for serialization of java objects.
+
+commit 22ac2a5286aa3a648cd31098893c380111432deb
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Wed Mar 16 07:31:51 2022 +0100
+
+    Add plugin for Spring Boot.
+
+commit 3985290a156bb4fa9e1aa7cc660ccbdcab7494a7
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Tue Mar 8 09:11:19 2022 +0100
+
+    Prepare for first release.
+
+commit 025aa8935c5de45672731e7a74e99c0f199c6683
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Tue Mar 8 09:11:08 2022 +0100
+
+    Add some docu about customizing NEP appender.
+
+commit 360bb0222471d2f2a307d2f037adc515ad8caa14
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Tue Mar 8 09:01:44 2022 +0100
+
+    Add gitHub actions and template for bug reports.
+
+commit aa40ff49c69c7dbc72b22dcf67f4ea4b8baf62b2
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Tue Mar 8 08:26:01 2022 +0100
+
+    Adjust JSON schema for input of REST endpoint.
+    Extend documentation in logback-spring.xml.
+    Beautify log messages for JSON input.
+
+commit d1ac70b341ee77be8e0ebb8d7159b8741e11034d
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Fri Mar 4 17:27:49 2022 +0100
+
+    First version posting monitoring information without any additional information except virtual service id.
+
+commit c8a425360b62e024b68cc1ee8d939491b7fbbe9f
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Fri Mar 4 17:16:10 2022 +0100
+
+    Add json schema and 'payload' for monitoring service of NEP.
+
+commit 23e09f9e156e659f0b57af4f19b9d2702db3f55e
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Tue Feb 22 08:21:34 2022 +0100
+
+    Add example configuration.
+
+commit cd501e396bb3f122d84ee5e80cbf0bbb05b81b72
+Author: Volker Hartmann <volker.hartmann@kit.edu>
+Date:   Wed Feb 16 15:58:13 2022 +0100
+
+    Initial release

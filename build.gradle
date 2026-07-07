@@ -1,0 +1,86 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'org.jsonschema2dataclass' version '4.2.0'
+    // plugin for Spring Boot
+    id "io.spring.dependency-management" version "1.0.14.RELEASE" 
+    id 'net.researchgate.release' version '3.0.2'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal() 
+}
+
+description = 'Monitoring access for NEP'
+group = 'edu.kit.datamanager'
+
+
+println "Running gradle version: $gradle.gradleVersion"
+println "Building ${name} version: ${version}"
+println "JDK version: ${JavaVersion.current()}"
+
+ext {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+dependencies {
+    implementation "ch.qos.logback:logback-classic:1.4.4"
+
+    // datamanager
+    implementation "edu.kit.datamanager:repo-core:1.0.4"
+    implementation "edu.kit.datamanager:service-base:1.0.7"
+
+    // Create JSON classes
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.4'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation 'com.google.code.gson:gson:2.9.0'
+}
+
+compileJava {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+}
+
+test {
+    finalizedBy jacocoTestReport
+    environment "spring.config.location", "classpath:/test-config/"
+
+    testLogging {
+        outputs.upToDateWhen {false}
+        showStandardStreams = true
+    }
+}
+
+tasks.withType(Test) {
+    testLogging {
+        events 'started', 'passed'
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.7"
+}
+
+sourceSets {
+  main {
+    java.srcDirs += file("${buildDir}/generated/sources/js2d/main")
+  }
+}
+
+jsonSchema2Pojo {
+  source.setFrom files("${project.rootDir}/src/main/resources/json/schema/")
+  targetPackage = 'edu.kit.datamanager.metastore.monitoring.nep.json'
+}
+
+release {
+  // define tag pattern (tags have to start with 'v')
+  tagTemplate = 'v${version}'
+}
+
+// task for printing project name.
+task printProjectName {
+    doLast {
+        println "${project.name}"
+    }
+}
