@@ -82,11 +82,11 @@
     "license": "https://spdx.org/licenses/Apache-2.0",
     "runtimePlatform": "JVM",
     "softwareRequirements": [
-      "https://www.oracle.com/java/technologies/downloads/#java21"
+        "https://www.oracle.com/java/technologies/downloads/#java21"
     ],
     "developmentStatus": "Production/Stable",
     "issueTracker": "https://github.com/kit-data-manager/monitoring4NEP/issues",
-    "version": "1.0.1",
-    "softwareVersion": "1.0.1",
-    "dateModified": "2026-06-23"
+    "version": "1.0.2",
+    "softwareVersion": "1.0.2",
+    "dateModified": "2026-07-07"
 }

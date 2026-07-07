@@ -17,5 +17,5 @@ abstract: "Enable monitoring of MetaStore acccesses via logging appender for NEP
 url: "https://github.com/kit-data-manager/monitoring4NEP"
 repository-code:  "https://github.com/kit-data-manager/monitoring4NEP"
 license: Apache-2.0
-version: 1.0.1
-date-released: 2026-06-23
+version: 1.0.2
+date-released: 2026-07-07
